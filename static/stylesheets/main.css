@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #6DD1AE;
+    background-color: #19342B;
     font-family: 'Josefin Sans', sans-serif;
 }
 body::after {
@@ -38,6 +38,7 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    z-index: 2;
 }
 .nav-top-container {
     display: flex;
@@ -133,15 +134,16 @@ nav {
     height: 85vh;
     display: flex;
     align-items: center;
-    padding: 0 10px;
 }
-.hero-header h1 {
+.hero-header h1,
+.register-container h1 {
     color: white;
     font-family: 'Josefin Sans';
     font-weight: 700;
     font-size: 42px;
     text-align: center;
     border-bottom: solid 2px #FFE084;
+    padding: 0 10px;
 }
 .main-text {
     color: white;
@@ -163,3 +165,41 @@ nav {
 }
 
 
+/* REGISTER STYLES */
+.register-container {
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0px;
+    padding: 12px;
+    background-color: white;
+    /* border: solid 1px rgb(26,52,42); */
+    color: rgb(26,52,42);
+    font-size: 0.8em;
+}
+button[type=submit] {
+    margin-top: 20px;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+    padding: 12px;
+    color: rgb(26,52,42);
+    background-color: #FFE084;
+    font-size: 1em;
+    font-weight: 700;
+}
