@@ -180,6 +180,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: 90%;
+    z-index: 2;
 }
 input {
     width: 100%;
@@ -202,4 +203,5 @@ button[type=submit] {
     background-color: #FFE084;
     font-size: 1em;
     font-weight: 700;
+    cursor: pointer;
 }
